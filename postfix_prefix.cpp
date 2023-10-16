@@ -24,7 +24,7 @@ int evaluate(string str){
     if (isdigit(ch))
     {
     st.push(ch-'0');
-    subtracting '0' to get original value of the number
+    //subtracting '0' to get original value of the number
     }else{
     int v2=st.top();
     st.pop();
