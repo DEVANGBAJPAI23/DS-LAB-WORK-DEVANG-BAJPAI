@@ -23,7 +23,7 @@ int main()
    	cin >> n;
     for(int i=0 ; i<n ; i++)
     {
-        scanf("%d", &a[i]);
+        cin >> a[i];
     }
 	cout << "sorted array = ";
     insertSort(a,key,n);
