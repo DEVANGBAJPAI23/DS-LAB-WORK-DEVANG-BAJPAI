@@ -28,7 +28,7 @@ int main()
 	cout << "sorted array = ";
     insertSort(a,key,n);
     for(int i=0;i<n;i++){
-        cout << arr[i] << " ";
+        cout << a[i] << " ";
     }
     return 0;
 }
