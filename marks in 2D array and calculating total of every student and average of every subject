@@ -14,6 +14,7 @@ int main()
             cin >> marks[i][j];
             total[i] += marks[i][j];
         }
+
     }
 
     for (int i = 0; i < 5; i++)
