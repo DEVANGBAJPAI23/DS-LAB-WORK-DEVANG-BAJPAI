@@ -95,3 +95,22 @@ void deletenode(node* &head, int pos){
 		delete curr;  
 	}
 }
+
+int main(){
+	
+	node*head = NULL;
+	node*tail = NULL;
+	insert_at_head(head, tail, 30);
+	insert_at_head(head, tail, 40);
+	insert_at_head(head, tail, 20);
+	insert_at_head(head, tail, 10);
+	insert_at_head(head, tail, 50);
+	insert_at_tail(tail, head, 200);
+	insert_at_pos(head, tail, 3, 100);
+	print(head);
+	cout << "after deleting the node = " << endl;
+	deletenode(head, 2);
+	print(head);
+	
+
+}
