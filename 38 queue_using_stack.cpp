@@ -1,3 +1,6 @@
+#include <iostream>
+#include <stack>
+using namespace std;
 class MyQueue {
     stack<int> st1;
     stack<int> st2;
@@ -39,3 +42,18 @@ public:
         return st1.empty();
     }
 };
+
+int main(){
+	MyQueue q;
+	q.push(10);
+	q.push(20);
+	cout<<q.peek()<<endl;
+	q.pop();
+	if(q.empty()){
+		cout<<"Empty Queue";
+	}
+	else{
+		cout<<q.peek();
+	}
+	return 0;
+}
