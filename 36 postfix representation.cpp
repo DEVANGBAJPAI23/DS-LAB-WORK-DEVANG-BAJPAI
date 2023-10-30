@@ -1,4 +1,5 @@
 #include<iostream>
+#include<iostream>
 #include<stack>
 using namespace std;
 
@@ -32,7 +33,7 @@ string InfixToPostfix(stack<char> s, string infix)
 	for(int i=0;i<infix.length();i++)
 	{
 		if((infix[i] >= 'a' && infix[i] <= 'z')
-		||(infix[i] >= 'A' && infix[i] <= 'Z'))
+		||(infix[i] >= 'A' && infix[i] <= 'Z') || (infix[i] >= '0' && infix[i] <= '9'))
 		{
 			postfix+=infix[i];
 		}
