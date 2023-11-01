@@ -58,6 +58,13 @@ void levelorder(node* root){
         }
     }
 }
+int minimum(node* root){
+    
+    while(root -> left){
+        root = root -> left;
+    }
+    return root -> data;
+}
 node* deletion(node*root, int d){
     if(root == NULL){
         return root;
