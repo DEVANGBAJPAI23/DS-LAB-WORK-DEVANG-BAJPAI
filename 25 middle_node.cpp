@@ -67,6 +67,15 @@ node* getmidnode(node* &head){
 	}
 	return slow;
 }
+void print(node* head){
+	node* temp = head;
+	
+	while(temp != NULL){
+		cout << temp -> data << " ";
+		temp = temp -> next;
+	}
+	cout << endl;
+}
 int main(){
 	
 	node*head = NULL;
