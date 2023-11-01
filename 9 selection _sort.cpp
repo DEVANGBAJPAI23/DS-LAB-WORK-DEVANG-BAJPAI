@@ -10,6 +10,7 @@ int main()
 	for(i = 0; i < n; i++){
 		cin >> arr[i];
 	}
+	int temp;
 	for(i = 0; i < n; i++){
 		minindex = i;
 		for(j = i + 1; j < n; j++){
